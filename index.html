@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exotikpedia – El mundo de las mascotas exóticas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -14,13 +14,13 @@
     }
 
     body {
-      background: url('https://images.unsplash.com/photo-1548780099-0f46b1fcd53c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1603982723352-7a0b15d74389?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
-      color: white;
+      color: #f6f1e9;
     }
 
     nav {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(46, 92, 77, 0.85); /* Verde bosque translúcido */
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -28,9 +28,13 @@
     }
 
     nav h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #ffcc70;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f4a261;
+    }
+
+    nav h1 span {
+      color: #f6f1e9;
     }
 
     nav ul {
@@ -40,30 +44,31 @@
     }
 
     nav ul li a {
-      color: white;
+      color: #f6f1e9;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
     }
 
     nav ul li a:hover {
-      color: #ffcc70;
+      color: #f4a261;
     }
 
     .hero {
       height: 90vh;
+      background-color: rgba(34, 40, 49, 0.6); /* Oscurece el fondo para mejor lectura */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.4);
     }
 
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      color: #f6f1e9;
       text-shadow: 2px 2px 8px black;
     }
 
@@ -71,14 +76,15 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
       max-width: 600px;
-      text-shadow: 1px 1px 6px black;
+      color: #f6f1e9;
+      text-shadow: 1px 1px 5px black;
     }
 
     .btn {
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
-      background-color: #ffcc70;
-      color: black;
+      background-color: #f4a261;
+      color: #222831;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -87,23 +93,22 @@
     }
 
     .btn:hover {
-      background-color: #ffc04d;
+      background-color: #e29559;
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(46, 92, 77, 0.85);
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      color: #f6f1e9;
     }
 
     @media (max-width: 600px) {
       .hero h2 {
         font-size: 2rem;
       }
+
       nav ul {
         flex-direction: column;
         gap: 1rem;
@@ -114,7 +119,7 @@
 <body>
 
   <nav>
-    <h1>Exotikpedia</h1>
+    <h1>Exotik<span>pedia</span></h1>
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="guias.html">Guías</a></li>
@@ -124,8 +129,8 @@
   </nav>
 
   <section class="hero">
-    <h2>Descubre el mundo salvaje de tus mascotas exóticas</h2>
-    <p>Consejos, guías y cuidados para reptiles, aves, roedores, insectos y otros compañeros fuera de lo común.</p>
+    <h2>Tu guía al mundo de las mascotas más extraordinarias</h2>
+    <p>Cuidados, consejos y secretos de reptiles, aves, roedores, insectos y mucho más. Todo en un solo lugar.</p>
     <a href="guias.html"><button class="btn">Explorar Guías</button></a>
   </section>
 
@@ -135,4 +140,3 @@
 
 </body>
 </html>
-
