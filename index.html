@@ -12,12 +12,9 @@
       font-family: 'Poppins', sans-serif;
     }
     body {
-      background: 
-        linear-gradient(rgba(34, 40, 49, 0.7), rgba(34, 40, 49, 0.7)),
-        url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #f6f1e9;
-      min-height: 100vh;
       overflow-x: hidden;
     }
     nav {
@@ -26,7 +23,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      animation: fadeIn 1s ease forwards;
+      animation: fadeInDown 1s ease forwards;
     }
     .brand {
       display: flex;
@@ -37,19 +34,22 @@
       text-decoration: none;
       white-space: nowrap;
       gap: 10px;
-      animation: slideInLeft 1s ease forwards;
+      opacity: 0;
+      animation: fadeInRight 1s ease forwards;
+      animation-delay: 0.3s;
     }
     .brand img {
       height: 50px;
       display: inline-block;
       vertical-align: middle;
-      animation: bounce 1.5s ease infinite;
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
-      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+      animation: fadeInLeft 1s ease forwards;
+      animation-delay: 0.6s;
     }
     nav ul li a {
       color: #f6f1e9;
@@ -62,22 +62,22 @@
     }
     .hero {
       height: 90vh;
-      background-color: rgba(34, 40, 49, 0.6);
+      background-color: rgba(34, 40, 49, 0.7);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 2rem;
-      animation: fadeInUp 1.2s ease forwards;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 1s;
+      opacity: 0;
     }
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
       color: #f6f1e9;
       text-shadow: 2px 2px 8px black;
-      opacity: 0;
-      animation: fadeInText 2s ease forwards 0.5s;
     }
     .hero p {
       font-size: 1.2rem;
@@ -85,8 +85,6 @@
       max-width: 600px;
       color: #f6f1e9;
       text-shadow: 1px 1px 5px black;
-      opacity: 0;
-      animation: fadeInText 2s ease forwards 1s;
     }
     .btn {
       padding: 0.8rem 1.5rem;
@@ -98,11 +96,11 @@
       cursor: pointer;
       font-weight: bold;
       transition: background-color 0.3s;
-      opacity: 0;
-      animation: fadeInText 2s ease forwards 1.5s;
+      box-shadow: 0 4px 10px rgba(244, 162, 97, 0.7);
     }
     .btn:hover {
       background-color: #e29559;
+      box-shadow: 0 6px 14px rgba(226, 149, 89, 0.9);
     }
     footer {
       background-color: rgba(46, 92, 77, 0.85);
@@ -110,51 +108,10 @@
       padding: 1rem;
       font-size: 0.9rem;
       color: #f6f1e9;
-      animation: fadeIn 2s ease forwards 2s;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 1.3s;
+      opacity: 0;
     }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes slideInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes fadeInText {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
     @media (max-width: 600px) {
       .hero h2 {
         font-size: 2rem;
@@ -163,6 +120,24 @@
         flex-direction: column;
         gap: 1rem;
       }
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
