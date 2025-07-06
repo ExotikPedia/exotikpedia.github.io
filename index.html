@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exotikpedia – El mundo de las mascotas exóticas</title>
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="flavicon.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -30,6 +35,9 @@
       font-size: 2rem;
       font-weight: bold;
       color: #f4a261;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
 
     nav h1 span {
@@ -118,8 +126,10 @@
 <body>
 
   <nav>
-    <img src="logo.png" alt="Logo Exotikpedia" style="height: 80px; margin-right: 1rem;">
-    <h1>Exotik<span>pedia</span></h1>
+    <h1>
+      <img src="logo.png" alt="Logo Exotikpedia" style="height: 50px;">
+      Exotik<span>pedia</span>
+    </h1>
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="guias.html">Guías</a></li>
