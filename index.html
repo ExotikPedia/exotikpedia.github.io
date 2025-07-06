@@ -8,16 +8,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
   <style>
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
-
     body {
       background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #f6f1e9;
     }
-
     nav {
       background-color: rgba(46, 92, 77, 0.85);
       padding: 1rem 2rem;
@@ -25,7 +25,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
     .brand {
       display: flex;
       align-items: center;
@@ -35,34 +34,33 @@
       text-decoration: none;
       white-space: nowrap;
     }
-
     .brand img {
       height: 50px;
       margin-right: 10px;
       vertical-align: middle;
+      display: inline-block;
     }
-
     .brand span {
+      display: inline-block;
+      vertical-align: middle;
+      letter-spacing: 0;
+      word-spacing: 0;
       white-space: nowrap;
     }
-
     nav ul {
       list-style: none;
       display: flex;
       gap: 2rem;
     }
-
     nav ul li a {
       color: #f6f1e9;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
     }
-
     nav ul li a:hover {
       color: #f4a261;
     }
-
     .hero {
       height: 90vh;
       background-color: rgba(34, 40, 49, 0.6);
@@ -73,14 +71,12 @@
       text-align: center;
       padding: 2rem;
     }
-
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 1rem;
       color: #f6f1e9;
       text-shadow: 2px 2px 8px black;
     }
-
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
@@ -88,7 +84,6 @@
       color: #f6f1e9;
       text-shadow: 1px 1px 5px black;
     }
-
     .btn {
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
@@ -100,11 +95,9 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
-
     .btn:hover {
       background-color: #e29559;
     }
-
     footer {
       background-color: rgba(46, 92, 77, 0.85);
       text-align: center;
@@ -112,12 +105,10 @@
       font-size: 0.9rem;
       color: #f6f1e9;
     }
-
     @media (max-width: 600px) {
       .hero h2 {
         font-size: 2rem;
       }
-
       nav ul {
         flex-direction: column;
         gap: 1rem;
@@ -126,7 +117,6 @@
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html" class="brand">
       <img src="logo.png" alt="Logo" />
@@ -149,6 +139,5 @@
   <footer>
     © 2025 Exotikpedia – Todos los derechos reservados
   </footer>
-
 </body>
 </html>
