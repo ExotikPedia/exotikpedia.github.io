@@ -33,20 +33,19 @@
       align-items: center;
     }
 
-    nav h1 {
-      font-size: 2rem;
-      font-weight: bold;
+    .brand {
       display: flex;
       align-items: center;
-    }
-
-    nav h1 img {
-      height: 50px;
-      margin-right: 0.5rem;
-    }
-
-    nav h1 span {
+      font-size: 2rem;
+      font-weight: bold;
       color: #f4a261;
+      text-decoration: none;
+    }
+
+    .brand img {
+      height: 50px;
+      margin-right: 0; /* sin espacio entre imagen y texto */
+      vertical-align: middle;
     }
 
     nav ul {
@@ -131,10 +130,10 @@
 <body>
 
   <nav>
-    <h1>
-      <img src="logo.png" alt="Logo Exotikpedia">
-      <span>Exotikpedia</span>
-    </h1>
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo" />
+      Exotikpedia
+    </a>
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="guias.html">Guías</a></li>
