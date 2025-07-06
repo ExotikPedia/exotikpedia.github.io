@@ -30,13 +30,19 @@
       font-weight: bold;
       color: #f4a261;
       text-decoration: none;
-      white-space: nowrap; /* Evita que el texto se parta */
+      white-space: nowrap; /* evita que la palabra se rompa */
     }
     .brand img {
       height: 50px;
       margin-right: 8px;
       display: inline-block;
       vertical-align: middle;
+    }
+    .brand span {
+      display: inline-block;
+      letter-spacing: 0;
+      word-spacing: 0;
+      white-space: nowrap; /* evita saltos de línea o espacios */
     }
     nav ul {
       list-style: none;
@@ -111,7 +117,7 @@
   <nav>
     <a href="index.html" class="brand">
       <img src="logo.png" alt="Logo" />
-      <span>Exotikpedia</span>
+      <span>Exotikpedia</span> <!-- Aquí sin ningún espacio -->
     </a>
     <ul>
       <li><a href="index.html">Inicio</a></li>
