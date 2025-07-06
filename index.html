@@ -30,20 +30,13 @@
       font-weight: bold;
       color: #f4a261;
       text-decoration: none;
-      white-space: nowrap; /* No permite que se parta la palabra */
+      white-space: nowrap; /* Evita que el texto se parta */
     }
     .brand img {
       height: 50px;
       margin-right: 8px;
+      display: inline-block;
       vertical-align: middle;
-      display: inline-block;
-    }
-  /* Esto evita que haya espacios entre las letras */
-    .brand span {
-      display: inline-block;
-      letter-spacing: 0;
-      word-spacing: 0;
-      white-space: nowrap;
     }
     nav ul {
       list-style: none;
@@ -115,18 +108,18 @@
   </style>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="brand">
-    <img src="logo.png" alt="Logo"/>
-    <span>Exotikpedia</span>
-  </a>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="guias.html">Guías</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
+  <nav>
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo" />
+      <span>Exotikpedia</span>
+    </a>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="guias.html">Guías</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
   <section class="hero">
     <h2>Tu guía al mundo de las mascotas más extraordinarias</h2>
     <p>Cuidados, consejos y secretos de reptiles, aves, roedores, insectos y mucho más. Todo en un solo lugar.</p>
